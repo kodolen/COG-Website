@@ -1,0 +1,18 @@
+.socialbar {
+  display: flex;
+  margin-bottom: 2rem;
+  flex-direction: row;
+
+  img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2rem;
+    margin-left: 1rem;
+    display: flex;
+  }
+}
