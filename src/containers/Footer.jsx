@@ -23,10 +23,10 @@ class Footer extends Component {
             </div>
           </div>
           <div className="Footer__linklist col-xs-12">
-            <span><a>About</a></span>
-            <span><a>Team</a></span>
-            <span><a>Games</a></span>
-            <span><a>Contact</a></span>
+            <span><a className="anchor-link">About</a></span>
+            <span><a className="anchor-link">Team</a></span>
+            <span><a className="anchor-link">Games</a></span>
+            <span><a className="anchor-link">Contact</a></span>
           </div>
           <div className="Footer__bottomtext col-xs-12">
             <span>2019 Corner Office Games</span>

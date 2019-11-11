@@ -7,7 +7,7 @@ class Socialbar extends Component {
         <img src={this.props.image} alt=""/>
           <span className="socialbar__text">{
             //eslint-disable-next-line
-            }<a href={this.props.url} target="_blank" rel="noopener noreferrer">{this.props.text}</a>
+            }<a className="anchor-link" href={this.props.url} target="_blank" rel="noopener noreferrer">{this.props.text}</a>
           </span>
       </div>
     )
