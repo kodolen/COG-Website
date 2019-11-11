@@ -1,0 +1,36 @@
+.button {
+
+  padding: 1.2rem 4rem;
+  text-decoration: none;
+  margin-right: 1.2rem;
+
+  &.primary {
+
+    background-color: $button-primary;
+    color: $text-secondary;
+    border: 0.1rem solid transparent;
+
+    &:hover {
+
+      background-color: $text-secondary;
+      color: $background-primary;
+      border: 0.1rem solid $background-primary;
+
+    }
+
+  }
+
+  &.secondary {
+
+    background-color: $text-secondary;
+    color: $background-primary;
+    border: 0.1rem solid $background-primary;
+
+  }
+
+  &.tertiary {
+
+
+  }
+
+}

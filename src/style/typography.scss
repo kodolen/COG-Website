@@ -5,7 +5,10 @@ html {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 5rem;
+  line-height: 5.9rem;
+  font-weight: 700;
+  color: $text-primary;
 }
 
 h2 {
@@ -20,4 +23,13 @@ p {
   color: $text-primary;
   font-size: 2rem;
   margin-bottom: 2rem;
+}
+
+.subtext {
+
+  font-size: 2.8rem;
+  line-height: 4rem;
+  color: $text-primary;
+  padding: 1.2rem 0;
+
 }
