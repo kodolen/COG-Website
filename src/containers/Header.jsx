@@ -7,26 +7,22 @@ import TwitterIcon from '../assets/Twitter.svg';
 class Header extends Component {
   render() {
     return (
-      <div className="Header">
-        <div className="nav">
-          <div className="logo">
-            <img src={LogoHeader} alt=""/>
-          </div>
-          <div className="nav-links">
-            <ul>
-              <li><a href="">Game</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
-          </div>
-          <div className="social">
-            <ul>
-              <li><a href=""><img src={InstagramIcon} alt=""/></a></li>
-              <li><a href=""><img src={FacebookIcon} alt=""/></a></li>
-              <li><a href=""><img src={TwitterIcon} alt=""/></a></li>
-              <li><a href=""><img src={TwitterIcon} alt=""/></a></li>
-            </ul>
-          </div>
+      <div className="Header row">
+        <div className="logo">
+          <img src={LogoHeader} alt=""/>
+        </div>
+        <div className="Header__links">
+          <span><a href="#">Game</a></span>
+          <span><a href="#">About</a></span>
+          <span><a href="#">Contact</a></span>
+        </div>
+        <div className="social">
+          <ul>
+            <li><a href=""><img src={InstagramIcon} alt=""/></a></li>
+            <li><a href=""><img src={FacebookIcon} alt=""/></a></li>
+            <li><a href=""><img src={TwitterIcon} alt=""/></a></li>
+            <li><a href=""><img src={TwitterIcon} alt=""/></a></li>
+          </ul>
         </div>
       </div>
     )
