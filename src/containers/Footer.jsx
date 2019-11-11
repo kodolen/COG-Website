@@ -16,17 +16,17 @@ class Footer extends Component {
           <div className="Footer__get-in-touch col-xs-12 col-md-6 off-md-1">
             <h2>Get in touch</h2>
             <div className="socialwrapper">
-              <Socialbar image={InstagramIcon} text="@CornerOfficeGames"></Socialbar>
-              <Socialbar image={FacebookIcon} text="@CornerOfficeGames"></Socialbar>
-              <Socialbar image={TwitterIcon} text="@CornerOfficeGames"></Socialbar>
-              <Socialbar image={TwitterIcon} text="@CornerOfficeGames"></Socialbar>
+              <Socialbar image={InstagramIcon} text="@CornerOfficeGames" url="https://www.instagram.com/cornerofficegames/"></Socialbar>
+              <Socialbar image={FacebookIcon} text="@CornerOfficeGames" url="https://www.facebook.com/cornerofficegames/"></Socialbar>
+              <Socialbar image={TwitterIcon} text="@CornerOfficeGames" url="https://twitter.com/COfficeGames"></Socialbar>
+              <Socialbar image={TwitterIcon} text="@CornerOfficeGames" url="https://www.youtube.com/channel/UCHZqOowdzuAJ3birP_yd1UA"></Socialbar>
             </div>
           </div>
           <div className="Footer__linklist col-xs-12">
-            <span>About</span>
-            <span>Team</span>
-            <span>Games</span>
-            <span>Contact</span>
+            <span><a>About</a></span>
+            <span><a>Team</a></span>
+            <span><a>Games</a></span>
+            <span><a>Contact</a></span>
           </div>
           <div className="Footer__bottomtext col-xs-12">
             <span>2019 Corner Office Games</span>

@@ -1,20 +1,25 @@
-.App-logo {
-  height: 40vmin;
-}
+a {
+  text-decoration: none;
+  color: $text-primary;
+  cursor: pointer;
+  position: relative;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  &::after {
+    content: "";
+    width: 0%;
+    height: .1rem;
+    background-color: $text-primary;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width .2s;
+  }
 
-.App-link {
-  color: #09d3ac;
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
 }
 
 .inner {
