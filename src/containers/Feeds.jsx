@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Glide from '@glidejs/glide'
 
 class Feeds extends Component {
 
@@ -22,19 +21,6 @@ class Feeds extends Component {
             console.log(data);
         });
 
-        new Glide('.glide').mount();
-
-        // // new Glide('.glide', {
-        // //     type: 'carousel',
-        // //     startAt: 0,
-        // //     perView: 3
-        // // })
-
-        // new Glide('.glide', {
-        //     type: 'carousel',
-        //     startAt: 0,
-        //     perView: 3
-        // })
     }
 
     render() {
@@ -45,27 +31,22 @@ class Feeds extends Component {
             <div className="Feeds">
                 <div className="row">
                     <div className="inner row">
-                        <div className="col-md-12">
-                            <div className="glide">
-                                <div data-glide-el="track" className="glide__track">
-                                    <ul className="glide__slides">
-                                        {posts.map((post, i) => (
-                                            <li className="glide__slide" key={i}>
-                                                <div className="feed" style={{ backgroundImage: 'url(' + post.imageUrl + ')' }}>
+                        <h3>Our latest Instagram posts</h3>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="feed-holder">
+                        <div className="inner row">
+                            {posts.map((post, i) => (
+                                <div className="col-lg-2 col-md-3 col-xs-12">
+                                    <div className="feed-image">
+                                        <img src={post.imageUrl} alt=""/>
+                                        <div className="overlay"></div>
+                                    </div>
 
-                                                </div>
-                                            </li>
-                                        ))}
-                                    </ul>
                                 </div>
 
-                                <div className="glide__arrows" data-glide-el="controls">
-                                    <button className="glide__arrow glide__arrow--left" data-glide-dir="<">prev
-                                    </button>
-                                    <button className="glide__arrow glide__arrow--right" data-glide-dir=">">next
-                                    </button>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>
