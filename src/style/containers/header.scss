@@ -22,7 +22,7 @@
       background: $background-primary;
       border-radius: 1rem;
       position: absolute;
-      left: 2rem;
+      right: 2rem;
       transition: transform .2s, opacity .2s, top .2s;
 
       &:nth-child(1) {
@@ -87,6 +87,12 @@
         }
       }
     }
+
+    &--mobile {
+      height: auto;
+      bottom: 5rem;
+      right: 15rem;
+    }
   }
 
   &--scrolled {
@@ -108,6 +114,39 @@
           transform: rotate(-45deg);
           top: 4.5rem;
         }
+      }
+    }
+    #{ $self }__menu {
+      height: calc(100% - 10rem);
+    }
+  }
+
+  &__menu {
+    position: fixed;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    height: 0;
+    background-color: white;
+    overflow: hidden;
+    transition: height .3s ease-out;
+    display: flex;
+    justify-content: center;
+
+    .menu__inner {
+      width: 80%;
+      display: flex;
+      min-width: 10rem;
+      flex-direction: column;
+      text-align: center;
+      height: 35rem;
+      align-self: center;
+      margin-bottom: 10rem;
+
+      span {
+        display: block;
+        font-size: 5rem;
+        margin: 2rem 0;
       }
     }
   }

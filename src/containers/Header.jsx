@@ -31,8 +31,10 @@ class Header extends Component {
     window.addEventListener("resize", function(){
       if(window.innerWidth >= 992) {
         this.setState({mobile: false});
+        console.log(window.innerWidth);
       } else {
         this.setState({mobile: true});
+        console.log(window.innerWidth);
       }
     }.bind(this))
 
@@ -72,19 +74,26 @@ class Header extends Component {
     } else {
       return(
         <div id="js-header" className="Header row">
+          <div className="Header__logo">
+            <img src={Logo} alt=""/>
+          </div>
           <div className="Header__hamburger" onClick={this.menuToggle}>
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <div className="Header__logo">
-            <img src={Logo} alt=""/>
-          </div>
-          <div className="Header__social">
-            <a className="socialimage"><img src={InstagramIcon} alt=""/></a>
-            <a className="socialimage"><img src={FacebookIcon} alt=""/></a>
-            <a className="socialimage"><img src={TwitterIcon} alt=""/></a>
-            <a className="socialimage"><img src={TwitterIcon} alt=""/></a>
+          <div className="Header__menu">
+            <div className="menu__inner">
+              <span><a className="anchor-link" href="#">Game</a></span>
+              <span><a className="anchor-link" href="#">About</a></span>
+              <span><a className="anchor-link" href="#">Contact</a></span>
+            </div>
+            <div className="Header__social Header__social--mobile">
+              <a className="socialimage"><img src={InstagramIcon} alt=""/></a>
+              <a className="socialimage"><img src={FacebookIcon} alt=""/></a>
+              <a className="socialimage"><img src={TwitterIcon} alt=""/></a>
+              <a className="socialimage"><img src={TwitterIcon} alt=""/></a>
+            </div>
           </div>
         </div>
       )
