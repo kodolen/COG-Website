@@ -1,6 +1,6 @@
 .OurTeam {
 
-  padding: 10rem 0;
+  padding: 8rem 0;
   background-color: $background-primary;
   text-align: center;
 
@@ -12,30 +12,36 @@
 
   }
 
-  .icons-holder {
+  //.icons-holder {
+  //
+  //  width: 100%;
+  //  display: flex;
+  //  flex-direction: row;
+  //  justify-content: space-between;
+  //  padding-top: 2.4rem;
+  //
+  //  .icon {
+  //
+  //    text-align: center;
+  //    display: flex;
+  //    flex-direction: column;
+  //    align-items: center;
+  //    margin: 0 1.6rem;
+  //    padding: 0 2rem;
+  //
+  //    img {
+  //
+  //      width: 5rem;
+  //
+  //    }
+  //
+  //  }
+  //
+  //}
 
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 2.4rem;
+  .video-holder {
 
-    .icon {
-
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0 1.6rem;
-      padding: 0 2rem;
-
-      img {
-
-        width: 5rem;
-
-      }
-
-    }
+    margin-top: 4rem;
 
   }
 
