@@ -1,0 +1,5 @@
+@mixin animation($content: '800ms forwards 200ms appear') {
+
+  animation: #{$content};
+
+}

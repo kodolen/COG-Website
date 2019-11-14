@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Like from '../assets/like.svg';
 
 class Feeds extends Component {
 
@@ -39,10 +40,13 @@ class Feeds extends Component {
                         <div className="inner row">
                             {posts.map((post, i) => (
                                 <div className="col-lg-2 col-md-3 col-xs-12">
-                                    <div className="feed-image">
-                                        <img src={post.imageUrl} alt=""/>
-                                        <div className="overlay"></div>
-                                    </div>
+                                    <a className="feed-image" href={post.url} target="_blank" key={i}>
+                                        <img src={post.imageUrl} alt="" className="img-gray"/>
+                                        <div className="like">
+                                            <img src={Like} alt=""/>
+                                            <span>{post.likesCount}</span>
+                                        </div>
+                                    </a>
 
                                 </div>
 
