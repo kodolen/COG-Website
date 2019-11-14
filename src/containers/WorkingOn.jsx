@@ -12,7 +12,7 @@ class WorkingOn extends Component {
                     <div className="inner row">
                         <div className="col-md-6 off-md-3 col-xs-12">
                             <div className="holder">
-                                <h1>We are currently developing our game</h1>
+                                <h2>We are currently developing our game</h2>
                                 <p className="subtext">We are Corner Office Games and we make games We are Corner Office
                                     Games and we make games </p>
                                 <span className="subtitle">Stay tuned via:</span>

@@ -10,11 +10,11 @@ class Footer extends Component {
       <div className="Footer row">
         <div className="Footer__inner row">
           <div className="Footer__COG col-xs-12 col-md-5">
-            <h2>Corner Office Games</h2>
-            <p>We are Corner Office Games and we make games We are Corner Office Games and we </p>
+            <h3>Corner Office Games</h3>
+            <p className="footer-text">We are Corner Office Games and we make games We are Corner Office Games and we </p>
           </div>
           <div className="Footer__get-in-touch col-xs-12 col-md-6 off-md-1">
-            <h2>Get in touch</h2>
+            <h3>Get in touch</h3>
             <div className="socialwrapper">
               <Socialbar image={InstagramIcon} text="@CornerOfficeGames" url="https://www.instagram.com/cornerofficegames/"></Socialbar>
               <Socialbar image={FacebookIcon} text="@CornerOfficeGames" url="https://www.facebook.com/cornerofficegames/"></Socialbar>
