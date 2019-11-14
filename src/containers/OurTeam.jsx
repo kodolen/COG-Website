@@ -11,7 +11,7 @@ class OurTeam extends Component {
                 <div className="row">
                     <div className="inner row">
                         <div className="col-md-6 off-md-3 col-xs-12">
-                            <h1>We are a group of people blah blah erg mooi</h1>
+                            <h2>We are a group of people blah blah erg mooi</h2>
                             <p>We are a group of people blah blah erg mooi en goed dat zeker weten We are a group of
                                 people blah blah erg mooi en goed dat zeker wetenWe are a group of people blah blah erg
                                 mooi en goed dat zeker weten</p>

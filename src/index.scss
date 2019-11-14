@@ -11,7 +11,14 @@
 @import 'style/containers/head-banner.scss';
 @import 'style/containers/working-on.scss';
 @import 'style/containers/our-team.scss';
+@import 'style/containers/feeds.scss';
 
 // Components
 @import 'style/components/socialbar.scss';
 @import 'style/components/button.scss';
+
+//Mixins
+@import 'style/mixins.scss';
+
+//Animations
+@import 'style/animations.scss';
