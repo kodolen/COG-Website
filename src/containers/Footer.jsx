@@ -23,7 +23,7 @@ class Footer extends Component {
             </div>
           </div>
           <div className="Footer__linklist col-xs-12">
-            <span><a className="anchor-link">About</a></span>
+            <span className="footer-links"><a className="anchor-link">About</a></span>
             <span><a className="anchor-link">Team</a></span>
             <span><a className="anchor-link">Games</a></span>
             <span><a className="anchor-link">Contact</a></span>

@@ -45,4 +45,33 @@
 
   }
 
+  iframe {
+
+    width: 600px;
+    height: 360px;
+
+  }
+
+  @media screen and (max-width: 375px) {
+
+    iframe {
+
+      width: 280px;
+      height: 200px;
+
+    }
+
+  }
+
+  @media screen and (max-width: 320px) {
+
+    iframe {
+
+      width: 200px;
+      height: 100px;
+
+    }
+
+  }
+
 }

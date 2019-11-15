@@ -12,7 +12,7 @@ class OurTeam extends Component {
                     <div className="inner row">
                         <div className="col-md-6 off-md-3 col-xs-12">
                             <h2>We are a group of people blah blah erg mooi</h2>
-                            <p>We are a group of people blah blah erg mooi en goed dat zeker weten We are a group of
+                            <p className="subtext">We are a group of people blah blah erg mooi en goed dat zeker weten We are a group of
                                 people blah blah erg mooi en goed dat zeker wetenWe are a group of people blah blah erg
                                 mooi en goed dat zeker weten</p>
 
@@ -30,7 +30,7 @@ class OurTeam extends Component {
                             {/*          text=" oke nog een mooite tekst hooroke nog een mooite tekst hoor"></Icon>*/}
                             {/*</div>*/}
                             <div className="video-holder">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/sS4WdR5tmBU"
+                                <iframe width="300" height="315" src="https://www.youtube.com/embed/sS4WdR5tmBU"
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen>
