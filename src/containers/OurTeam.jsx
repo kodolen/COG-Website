@@ -21,14 +21,6 @@ class OurTeam extends Component {
 
                     <div className="inner row">
                         <div className="col-md-10 off-md-1 col-xs-12">
-                            {/*<div className="icons-holder">*/}
-                            {/*    <Icon icon={Sort} title="Developers"*/}
-                            {/*          text=" oke nog een mooite tekst hooroke nog een mooite tekst hoor"></Icon>*/}
-                            {/*    <Icon icon={Color} title="Artists"*/}
-                            {/*          text=" oke nog een mooite tekst hooroke nog een mooite tekst hoor"></Icon>*/}
-                            {/*    <Icon icon={Computer} title="Designers"*/}
-                            {/*          text=" oke nog een mooite tekst hooroke nog een mooite tekst hoor"></Icon>*/}
-                            {/*</div>*/}
                             <div className="video-holder">
                                 <iframe width="300" height="315" src="https://www.youtube.com/embed/sS4WdR5tmBU"
                                         frameBorder="0"

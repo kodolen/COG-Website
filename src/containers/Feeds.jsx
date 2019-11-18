@@ -40,16 +40,16 @@ class Feeds extends Component {
                         <div className="inner row">
                             {posts.map((post, i) => (
                                 <div className="col-lg-2 col-md-3 col-xs-12">
-                                    <a className="feed-image" href={post.url} target="_blank" key={i}>
-                                        <img src={post.imageUrl} alt="" className="img-gray"/>
-                                        <div className="like">
-                                            <img src={Like} alt=""/>
-                                            <span>{post.likesCount}</span>
-                                        </div>
-                                    </a>
-
+                                    <div className="image-holder">
+                                        <a className="feed-image" href={post.url} target="_blank" key={i}>
+                                            <img src={post.imageUrl} alt="" className="img-gray"/>
+                                            <div className="like">
+                                                <img src={Like} alt=""/>
+                                                <span>{post.likesCount}</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-
                             ))}
                         </div>
                     </div>

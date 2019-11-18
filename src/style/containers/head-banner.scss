@@ -55,4 +55,34 @@
 
   }
 
+  @media screen and (max-width: 414px) {
+
+    height: auto;
+
+    .inner {
+
+      height: auto;
+
+    }
+
+    .holder {
+
+      padding-top: 6rem;
+
+    }
+
+    .img-holder {
+
+      padding: 4rem 0;
+
+      img {
+
+        width: 20rem;
+
+      }
+
+    }
+
+  }
+
 }

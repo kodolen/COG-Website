@@ -12,33 +12,6 @@
 
   }
 
-  //.icons-holder {
-  //
-  //  width: 100%;
-  //  display: flex;
-  //  flex-direction: row;
-  //  justify-content: space-between;
-  //  padding-top: 2.4rem;
-  //
-  //  .icon {
-  //
-  //    text-align: center;
-  //    display: flex;
-  //    flex-direction: column;
-  //    align-items: center;
-  //    margin: 0 1.6rem;
-  //    padding: 0 2rem;
-  //
-  //    img {
-  //
-  //      width: 5rem;
-  //
-  //    }
-  //
-  //  }
-  //
-  //}
-
   .video-holder {
 
     margin-top: 4rem;
@@ -53,6 +26,17 @@
   }
 
   @media screen and (max-width: 375px) {
+
+    iframe {
+
+      width: 280px;
+      height: 200px;
+
+    }
+
+  }
+
+  @media screen and (max-width: 414px) {
 
     iframe {
 

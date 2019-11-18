@@ -13,7 +13,7 @@ h1 {
   font-weight: 700;
   color: $text-primary;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
 
     font-size: 3rem;
     line-height: 4rem;
@@ -28,7 +28,7 @@ h2 {
   font-size: 3.6rem;
   color: $text-primary;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
 
     font-size: 2.6rem;
 
@@ -62,7 +62,7 @@ p {
   padding: 1.2rem 0;
 
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
 
     font-size: 1.8rem;
     line-height: 2.8rem;
