@@ -1,10 +1,32 @@
-@keyframes  easeIn{
+@keyframes appear {
+
+  0% {
+
+    opacity: 0;
+
+  }
 
   100% {
 
-    transform: scale(1.5);
-    transition-timing-function: ease-in;
-    transition: 1.0s;
+    opacity: 1;
+
+  }
+
+}
+
+@keyframes leftToRight {
+
+  0% {
+
+    opacity: 0;
+    margin-left: -20rem;
+
+  }
+
+  100% {
+
+    opacity: 1;
+    margin-left: 0;
 
   }
 

@@ -10,6 +10,34 @@
 
   }
 
+  .holder {
+
+    @media screen and (min-width: 1200px) {
+
+      h1 {
+
+        animation: leftToRight 600ms forwards;
+
+      }
+
+      p {
+
+        animation: 600ms appear 600ms forwards;
+        opacity: 0;
+
+      }
+
+      .button {
+
+        animation: 600ms appear 1200ms forwards;
+        opacity: 0;
+
+      }
+
+    }
+
+  }
+
   .img-holder {
 
     width: 100%;
@@ -20,6 +48,13 @@
     img {
 
       width: 50rem;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+
+      animation: 600ms appear 1800ms forwards;
+      opacity: 0;
 
     }
 

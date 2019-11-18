@@ -5,6 +5,9 @@
 @import 'style/App.scss';
 @import 'style/flex-grid';
 
+//Animations
+@import 'style/animations.scss';
+
 // Containers
 @import 'style/containers/footer.scss';
 @import 'style/containers/header.scss';
@@ -19,6 +22,3 @@
 
 //Mixins
 @import 'style/mixins.scss';
-
-//Animations
-@import 'style/animations.scss';
