@@ -5,10 +5,11 @@
   text-align: center;
 
   h2,
-  h3,
   p {
 
-    color: $text-secondary
+    color: $text-secondary;
+    visibility: hidden;
+    opacity: 0;
 
   }
 
@@ -22,6 +23,19 @@
 
     width: 600px;
     height: 360px;
+    visibility: hidden;
+    opacity: 0;
+
+  }
+
+  @media screen and (max-width: 320px) {
+
+    iframe {
+
+      width: 200px;
+      height: 100px;
+
+    }
 
   }
 
@@ -47,12 +61,26 @@
 
   }
 
-  @media screen and (max-width: 320px) {
+  &.show {
+
+    h2 {
+
+      animation: 600ms leftToRight forwards;
+      opacity: 1;
+
+    }
+
+    p {
+
+      animation: 600ms appear 600ms forwards;
+      opacity: 1;
+
+    }
 
     iframe {
 
-      width: 200px;
-      height: 100px;
+      animation: 600ms appear 1200ms forwards;
+      opacity: 1;
 
     }
 

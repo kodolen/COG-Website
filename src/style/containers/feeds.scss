@@ -3,6 +3,8 @@
   h3 {
 
     margin-top: 10rem;
+    opacity: 0;
+    visibility: hidden;
 
   }
 
@@ -10,6 +12,8 @@
 
     margin: 3rem 0;
     width: 100%;
+    opacity: 0;
+    visibility: hidden;
 
     .image-holder {
 
@@ -101,6 +105,24 @@
         }
 
       }
+
+    }
+
+  }
+
+  &.show {
+
+    h3 {
+
+      animation: 600ms leftToRight forwards;
+      opacity: 1;
+
+    }
+
+    .feed-holder {
+
+      animation: 600ms appear 600ms forwards;
+      opacity: 1;
 
     }
 

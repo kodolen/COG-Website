@@ -36,4 +36,46 @@
 
   }
 
+  h2,
+  p,
+  .subtitle,
+  .icon-holder {
+
+    opacity: 0;
+    visibility: hidden;
+
+  }
+
+  &.show {
+
+    h2 {
+
+      animation: 600ms leftToRight forwards;
+      opacity: 1;
+
+    }
+
+    p {
+
+      animation: 600ms appear 600ms forwards;
+      opacity: 1;
+
+    }
+
+    .subtitle {
+
+      animation: 600ms leftToRight 1200ms forwards;
+      opacity: 1;
+
+    }
+
+    .icon-holder {
+
+      animation: 600ms appear 1800ms forwards;
+      opacity: 1;
+
+    }
+
+  }
+
 }

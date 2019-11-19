@@ -3,12 +3,18 @@ import Socialbar from '../components/socialbar';
 import InstagramIcon from '../assets/Instagram.svg';
 import FacebookIcon from '../assets/Facebook.svg';
 import TwitterIcon from '../assets/Twitter.svg';
+import {Waypoint} from "react-waypoint";
 
 class Footer extends Component {
   render() {
     return (
       <div className="Footer row">
-        <div className="Footer__inner row">
+        <Waypoint bottomOffset="200px" onEnter={() => {
+          let currentElement = document.getElementById("js-Footer");
+          currentElement.classList.add('show');
+        }}
+        />
+        <div className="Footer__inner row" id="js-Footer">
           <div className="Footer__COG col-xs-12 col-md-5">
             <h3>Corner Office Games</h3>
             <p className="footer-text">We are Corner Office Games and we make games We are Corner Office Games and we </p>

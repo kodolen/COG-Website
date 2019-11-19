@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Button from '../components/button';
 import logo from '../assets/logo.png';
+import { Waypoint } from 'react-waypoint';
 
 class HeadBanner extends Component {
     render() {

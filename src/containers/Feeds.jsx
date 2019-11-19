@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Like from '../assets/like.svg';
+import {Waypoint} from "react-waypoint";
 
 class Feeds extends Component {
 
@@ -29,7 +30,12 @@ class Feeds extends Component {
         let {posts} = this.state;
 
         return (
-            <div className="Feeds">
+            <div className="Feeds" id="js-Feeds">
+                <Waypoint bottomOffset="100px" onEnter={() => {
+                    let currentElement = document.getElementById("js-Feeds");
+                    currentElement.classList.add('show');
+                }}
+                />
                 <div className="row">
                     <div className="inner row">
                         <h3>Our latest Instagram posts</h3>

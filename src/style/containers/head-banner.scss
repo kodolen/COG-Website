@@ -16,20 +16,21 @@
 
       h1 {
 
-        animation: leftToRight 600ms forwards;
+        animation: 600ms leftToRight 200ms forwards;
+        opacity: 0;
 
       }
 
       p {
 
-        animation: 600ms appear 600ms forwards;
+        animation: 600ms appear 800ms forwards;
         opacity: 0;
 
       }
 
       .button {
 
-        animation: 600ms appear 1200ms forwards;
+        animation: 600ms appear 1400ms forwards;
         opacity: 0;
 
       }
@@ -53,8 +54,7 @@
 
     @media screen and (min-width: 1200px) {
 
-      animation: 600ms appear 1800ms forwards;
-      opacity: 0;
+      animation: 600ms scaleUp 200ms forwards;
 
     }
 

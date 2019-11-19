@@ -6,6 +6,16 @@
   &__inner {
     width: 80%;
     margin-left: 10%;
+    opacity: 0;
+    visibility: hidden;
+
+    &.show {
+
+      animation: 600ms appear forwards;
+      opacity: 1;
+
+    }
+
   }
 
   &__get-in-touch {
