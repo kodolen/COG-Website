@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
 import Button from '../components/button';
 import logo from '../assets/logo.png';
-import {Waypoint} from 'react-waypoint';
-import {Link, animateScroll as scroll} from "react-scroll";
+import {Link} from "react-scroll";
 
 class HeadBanner extends Component {
     render() {
         return (
-            <div className="HeadBanner">
+            <div className="HeadBanner" id="js-HeadBanner">
                 <div className="row">
                     <div className="inner row">
                         <div className="col-md-6 col-xs-12">

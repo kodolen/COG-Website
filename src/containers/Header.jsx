@@ -71,10 +71,10 @@ class Header extends Component {
             <span><Link activeClass="active" to="js-Feeds" spy={true} smooth={true} offset={-70} duration={500} className="anchor-link">Social</Link></span>
           </div>
           <div className="Header__social">
-            <a className="socialimage" href="https://www.instagram.com/cornerofficegames/" target="_blank"><img src={InstagramIcon} alt=""/></a>
-            <a className="socialimage" href="https://www.facebook.com/cornerofficegames/" target="_blank"><img src={FacebookIcon} alt=""/></a>
-            <a className="socialimage" href="https://twitter.com/cofficegames" target="_blank"><img src={TwitterIcon} alt=""/></a>
-            <a className="socialimage" href="https://www.youtube.com/channel/UCHZqOowdzuAJ3birP_yd1UA" target="_blank"><img src={YoutubeIcon} alt=""/></a>
+            <div className="socialimage" href="https://www.instagram.com/cornerofficegames/" target="_blank" rel="noopener noreferrer"><img src={InstagramIcon} alt=""/></div>
+            <div className="socialimage" href="https://www.facebook.com/cornerofficegames/" target="_blank" rel="noopener noreferrer"><img src={FacebookIcon} alt=""/></div>
+            <div className="socialimage" href="https://twitter.com/cofficegames" target="_blank" rel="noopener noreferrer"><img src={TwitterIcon} alt=""/></div>
+            <div className="socialimage" href="https://www.youtube.com/channel/UCHZqOowdzuAJ3birP_yd1UA" target="_blank" rel="noopener noreferrer"><img src={YoutubeIcon} alt=""/></div>
           </div>
         </div>
       )
@@ -96,10 +96,10 @@ class Header extends Component {
               <span><a className="anchor-link" href="#">Contact</a></span>
             </div>
             <div className="Header__social Header__social--mobile">
-              <a className="socialimage"><img src={InstagramIcon} alt=""/></a>
-              <a className="socialimage"><img src={FacebookIcon} alt=""/></a>
-              <a className="socialimage"><img src={TwitterIcon} alt=""/></a>
-              <a className="socialimage"><img src={TwitterIcon} alt=""/></a>
+              <div className="socialimage"><img src={InstagramIcon} alt=""/></div>
+              <div className="socialimage"><img src={FacebookIcon} alt=""/></div>
+              <div className="socialimage"><img src={TwitterIcon} alt=""/></div>
+              <div className="socialimage"><img src={TwitterIcon} alt=""/></div>
             </div>
           </div>
         </div>

@@ -30,6 +30,7 @@ class OurTeam extends Component {
                             <div className="video-holder">
                                 <iframe width="300" height="315" src="https://www.youtube.com/embed/sS4WdR5tmBU"
                                         frameBorder="0"
+                                        title="vlog"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen>
                                 </iframe>

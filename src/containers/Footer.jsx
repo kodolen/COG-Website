@@ -5,8 +5,14 @@ import FacebookIcon from '../assets/Facebook.svg';
 import TwitterIcon from '../assets/Twitter.svg';
 import YoutubeIcon from '../assets/yt.svg';
 import {Waypoint} from "react-waypoint";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 class Footer extends Component {
+
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   render() {
     return (
       <div className="Footer row">
@@ -30,10 +36,10 @@ class Footer extends Component {
             </div>
           </div>
           <div className="Footer__linklist col-xs-12">
-            <span className="footer-links"><a className="anchor-link">About</a></span>
-            <span><a href="#" className="anchor-link">Team</a></span>
-            <span><a className="anchor-link">Games</a></span>
-            <span><a className="anchor-link">Contact</a></span>
+            <span><Link to="js-HeadBanner" spy={true} smooth={true} offset={-70} duration={500} className="anchor-link">Home</Link></span>
+            <span><Link to="js-WorkingOn" spy={true} smooth={true} offset={-70} duration={500} className="anchor-link">Game</Link></span>
+            <span><Link to="js-OurTeam" spy={true} smooth={true} offset={-70} duration={500} className="anchor-link">About</Link></span>
+            <span><Link to="js-Feeds" spy={true} smooth={true} offset={-70} duration={500} className="anchor-link">Social</Link></span>
           </div>
           <div className="Footer__bottomtext col-xs-12">
             <span>2019 Corner Office Games</span>

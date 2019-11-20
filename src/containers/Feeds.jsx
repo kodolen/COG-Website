@@ -47,7 +47,7 @@ class Feeds extends Component {
                             {posts.map((post, i) => (
                                 <div className="col-lg-2 col-md-3 col-xs-12" key={i}>
                                     <div className="image-holder">
-                                        <a className="feed-image" href={post.url} target="_blank">
+                                        <a className="feed-image" href={post.url} target="_blank" rel="noopener noreferrer">
                                             <img src={post.imageUrl} alt="" className="img-gray"/>
                                             <div className="like">
                                                 <img src={Like} alt=""/>
