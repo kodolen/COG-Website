@@ -82,7 +82,7 @@ class Header extends Component {
       return(
         <div id="js-header" className="Header row">
           <div className="Header__logo">
-            <img src={Logo} alt=""/>
+            <img src={Logo} alt="" onClick={this.scrollToTop}/>
           </div>
           <div className="Header__hamburger" onClick={this.menuToggle}>
             <span></span>
@@ -91,21 +91,20 @@ class Header extends Component {
           </div>
           <div className="Header__menu">
             <div className="menu__inner">
-              <span><a className="anchor-link" href="#">Game</a></span>
-              <span><a className="anchor-link" href="#">About</a></span>
-              <span><a className="anchor-link" href="#">Contact</a></span>
+              <span><Link activeClass="active" to="js-WorkingOn" spy={true} smooth={true} offset={-70} duration={500} className="anchor-link" onClick={this.menuToggle}>Game</Link></span>
+              <span><Link activeClass="active" to="js-OurTeam" spy={true} smooth={true} offset={-70} duration={500} className="anchor-link" onClick={this.menuToggle}>About</Link></span>
+              <span><Link activeClass="active" to="js-Feeds" spy={true} smooth={true} offset={-70} duration={500} className="anchor-link" onClick={this.menuToggle}>Social</Link></span>
             </div>
             <div className="Header__social Header__social--mobile">
-              <div className="socialimage"><img src={InstagramIcon} alt=""/></div>
-              <div className="socialimage"><img src={FacebookIcon} alt=""/></div>
-              <div className="socialimage"><img src={TwitterIcon} alt=""/></div>
-              <div className="socialimage"><img src={TwitterIcon} alt=""/></div>
+            <div className="socialimage" href="https://www.instagram.com/cornerofficegames/" target="_blank" rel="noopener noreferrer"><img src={InstagramIcon} alt=""/></div>
+            <div className="socialimage" href="https://www.facebook.com/cornerofficegames/" target="_blank" rel="noopener noreferrer"><img src={FacebookIcon} alt=""/></div>
+            <div className="socialimage" href="https://twitter.com/cofficegames" target="_blank" rel="noopener noreferrer"><img src={TwitterIcon} alt=""/></div>
+            <div className="socialimage" href="https://www.youtube.com/channel/UCHZqOowdzuAJ3birP_yd1UA" target="_blank" rel="noopener noreferrer"><img src={YoutubeIcon} alt=""/></div>
             </div>
           </div>
         </div>
       )
     }
-
   };
 }
 
