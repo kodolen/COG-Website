@@ -30,7 +30,7 @@ class Header extends Component {
     document.addEventListener("scroll", function(){
       if(window.pageYOffset > 0) {
         header.classList.add('Header--scrolled')
-      } else if (window.pageYOffset == 0) {
+      } else if (window.pageYOffset === 0) {
         header.classList.remove('Header--scrolled')
       }
     })
@@ -49,7 +49,7 @@ class Header extends Component {
   }
 
   menuToggle(e) {
-    if(this.state.menu == 'closed') {
+    if(this.state.menu === 'closed') {
       this.setState({menu: 'open'});
       document.getElementById('js-header').classList.add('Header--opened');
     } else {
@@ -66,25 +66,9 @@ class Header extends Component {
             <img src={LogoHeader} className="nav-logo" alt="Logo" onClick={this.scrollToTop}/>
           </div>
           <div className="Header__links">
-
-            <span>
-            <Link activeClass="active" to="js-WorkingOn" spy={true} smooth={true} offset={-70} duration={500}>
-              <a className="anchor-link">Game</a>
-            </Link>
-              </span>
-
-            <span>
-            <Link activeClass="active" to="js-OurTeam" spy={true} smooth={true} offset={-70} duration={500}>
-              <a className="anchor-link">About</a>
-            </Link>
-              </span>
-
-            <span>
-            <Link activeClass="active" to="js-Feeds" spy={true} smooth={true} offset={-70} duration={500}>
-              <a className="anchor-link">Social</a>
-            </Link>
-              </span>
-
+            <span><Link activeClass="active" to="js-WorkingOn" spy={true} smooth={true} offset={-70} duration={500} className="anchor-link">Game</Link></span>
+            <span><Link activeClass="active" to="js-OurTeam" spy={true} smooth={true} offset={-70} duration={500} className="anchor-link">About</Link></span>
+            <span><Link activeClass="active" to="js-Feeds" spy={true} smooth={true} offset={-70} duration={500} className="anchor-link">Social</Link></span>
           </div>
           <div className="Header__social">
             <a className="socialimage" href="https://www.instagram.com/cornerofficegames/" target="_blank"><img src={InstagramIcon} alt=""/></a>
