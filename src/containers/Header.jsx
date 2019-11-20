@@ -4,8 +4,15 @@ import Logo from '../assets/logo.png';
 import InstagramIcon from '../assets/Instagram.svg';
 import FacebookIcon from '../assets/Facebook.svg';
 import TwitterIcon from '../assets/Twitter.svg';
+import YoutubeIcon from '../assets/yt.svg';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 class Header extends Component {
+
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   constructor(props) {
     super(props);
     this.state = {mobile: false, menu: 'closed'};
@@ -13,7 +20,7 @@ class Header extends Component {
 
   componentDidMount() {
     const header = document.getElementById('js-header');
-    
+
     if(window.innerWidth >= 992) {
       this.setState({mobile: false});
     } else {
@@ -56,18 +63,34 @@ class Header extends Component {
       return (
         <div id="js-header" className="Header row">
           <div className="Header__logo">
-            <img src={LogoHeader} alt=""/>
+            <img src={LogoHeader} className="nav-logo" alt="Logo" onClick={this.scrollToTop}/>
           </div>
           <div className="Header__links">
-            <span><a className="anchor-link" href="#">Game</a></span>
-            <span><a className="anchor-link" href="#">About</a></span>
-            <span><a className="anchor-link" href="#">Contact</a></span>
+
+            <span>
+            <Link activeClass="active" to="js-WorkingOn" spy={true} smooth={true} offset={-70} duration={500}>
+              <a className="anchor-link">Game</a>
+            </Link>
+              </span>
+
+            <span>
+            <Link activeClass="active" to="js-OurTeam" spy={true} smooth={true} offset={-70} duration={500}>
+              <a className="anchor-link">About</a>
+            </Link>
+              </span>
+
+            <span>
+            <Link activeClass="active" to="js-Feeds" spy={true} smooth={true} offset={-70} duration={500}>
+              <a className="anchor-link">Social</a>
+            </Link>
+              </span>
+
           </div>
           <div className="Header__social">
-            <a className="socialimage"><img src={InstagramIcon} alt=""/></a>
-            <a className="socialimage"><img src={FacebookIcon} alt=""/></a>
-            <a className="socialimage"><img src={TwitterIcon} alt=""/></a>
-            <a className="socialimage"><img src={TwitterIcon} alt=""/></a>
+            <a className="socialimage" href="https://www.instagram.com/cornerofficegames/" target="_blank"><img src={InstagramIcon} alt=""/></a>
+            <a className="socialimage" href="https://www.facebook.com/cornerofficegames/" target="_blank"><img src={FacebookIcon} alt=""/></a>
+            <a className="socialimage" href="https://twitter.com/cofficegames" target="_blank"><img src={TwitterIcon} alt=""/></a>
+            <a className="socialimage" href="https://www.youtube.com/channel/UCHZqOowdzuAJ3birP_yd1UA" target="_blank"><img src={YoutubeIcon} alt=""/></a>
           </div>
         </div>
       )
@@ -98,7 +121,7 @@ class Header extends Component {
         </div>
       )
     }
-   
+
   };
 }
 

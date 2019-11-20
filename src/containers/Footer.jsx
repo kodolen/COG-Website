@@ -3,6 +3,7 @@ import Socialbar from '../components/socialbar';
 import InstagramIcon from '../assets/Instagram.svg';
 import FacebookIcon from '../assets/Facebook.svg';
 import TwitterIcon from '../assets/Twitter.svg';
+import YoutubeIcon from '../assets/yt.svg';
 import {Waypoint} from "react-waypoint";
 
 class Footer extends Component {
@@ -25,7 +26,7 @@ class Footer extends Component {
               <Socialbar image={InstagramIcon} text="@CornerOfficeGames" url="https://www.instagram.com/cornerofficegames/"></Socialbar>
               <Socialbar image={FacebookIcon} text="@CornerOfficeGames" url="https://www.facebook.com/cornerofficegames/"></Socialbar>
               <Socialbar image={TwitterIcon} text="@CornerOfficeGames" url="https://twitter.com/COfficeGames"></Socialbar>
-              <Socialbar image={TwitterIcon} text="@CornerOfficeGames" url="https://www.youtube.com/channel/UCHZqOowdzuAJ3birP_yd1UA"></Socialbar>
+              <Socialbar image={YoutubeIcon} text="@CornerOfficeGames" url="https://www.youtube.com/channel/UCHZqOowdzuAJ3birP_yd1UA"></Socialbar>
             </div>
           </div>
           <div className="Footer__linklist col-xs-12">
