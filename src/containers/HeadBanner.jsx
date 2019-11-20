@@ -13,9 +13,9 @@ class HeadBanner extends Component {
                         <div className="col-md-6 col-xs-12">
                             <div className="holder">
                                 <h1>We are Corner Office Games</h1>
-                                <p className="subtext">We are Corner Office Games and we make games We are Corner Office
-                                    Games and we make
-                                    games </p>
+                                <p className="subtext">An 18-person team
+                                from the Dutch Minor Game Design & Development at the University
+                                of Applied Sciences in Rotterdam.</p>
                                 <Link activeClass="active"
                                       to="js-WorkingOn" spy={true}
                                       smooth={true} offset={-70}

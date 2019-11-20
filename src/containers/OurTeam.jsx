@@ -13,11 +13,14 @@ class OurTeam extends Component {
                 <div className="row">
                     <div className="inner row">
                         <div className="col-md-6 off-md-3 col-xs-12">
-                            <h2>We are a group of people blah blah erg mooi</h2>
-                            <p className="subtext">We are a group of people blah blah erg mooi en goed dat zeker weten
-                                We are a group of
-                                people blah blah erg mooi en goed dat zeker wetenWe are a group of people blah blah erg
-                                mooi en goed dat zeker weten</p>
+                            <h2>Introducing our team</h2>
+                            <p className="subtext">
+                                We from Corner Office Games started life as an 18-person team
+                                from the Dutch Minor Game Design & Development at the University
+                                of Applied Sciences in Rotterdam. We are a perfect mix of
+                                designers, developers and artists working to the fullest to
+                                achieve a wonderful game within 14 weeks of time.
+                            </p>
 
                         </div>
                     </div>
