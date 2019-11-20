@@ -17,9 +17,10 @@ class WorkingOn extends Component {
                     <div className="inner row">
                         <div className="col-md-6 off-md-3 col-xs-12">
                             <div className="holder">
-                                <h2>We are currently developing our game</h2>
-                                <p className="subtext">We are Corner Office Games and we make games We are Corner Office
-                                    Games and we make games </p>
+                                <h2>Game in development</h2>
+                                <p className="subtext">
+                                We are developing a co-op puzzle platformer. Play with a
+                  f             riend or even make new ones! Follow us for updates.</p>
                                 <span className="subtitle">Stay tuned via:</span>
                                 <div className="icon-holder">
                                     <ul>
