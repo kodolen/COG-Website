@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import InstagramIcon from "../assets/Instagram.svg";
 import FacebookIcon from "../assets/Facebook.svg";
 import TwitterIcon from "../assets/Twitter.svg";
+import YoutubeIcon from '../assets/yt.svg';
 import {Waypoint} from "react-waypoint";
 
 class WorkingOn extends Component {
@@ -24,9 +25,10 @@ class WorkingOn extends Component {
                                 <span className="subtitle">Stay tuned via:</span>
                                 <div className="icon-holder">
                                     <ul>
-                                        <li><a href=""><img src={InstagramIcon} alt=""/></a></li>
-                                        <li><a href=""><img src={FacebookIcon} alt=""/></a></li>
-                                        <li><a href=""><img src={TwitterIcon} alt=""/></a></li>
+                                        <li><a href="https://www.instagram.com/cornerofficegames/" target="_blank" rel="noopener noreferrer"><img src={InstagramIcon} alt=""/></a></li>
+                                        <li><a href="https://www.facebook.com/cornerofficegames/" target="_blank" rel="noopener noreferrer"><img src={FacebookIcon} alt=""/></a></li>
+                                        <li><a href="https://twitter.com/cofficegames" target="_blank" rel="noopener noreferrer"><img src={TwitterIcon} alt=""/></a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCHZqOowdzuAJ3birP_yd1UA" target="_blank" rel="noopener noreferrer"><img src={YoutubeIcon} alt=""/></a></li>
                                     </ul>
                                 </div>
                             </div>

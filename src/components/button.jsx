@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+
 class Button extends Component {
-  render() {
-    return (
-        <a href="#" className={this.props.class}>
-          <span>
+    render() {
+        return (
+            <span className={this.props.class}>
             {this.props.text}
           </span>
-        </a>
-    )
-  }
+        )
+    }
 }
+
 export default Button;

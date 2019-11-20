@@ -13,7 +13,7 @@ class Feeds extends Component {
 
     componentDidMount() {
         //this API call gets the latest 6 posts, this can be changed in Apify.com
-        fetch('https://api.apify.com/v2/datasets/r7o3GgR6yPv9syRpc/items')
+        fetch('https://api.apify.com/v2/datasets/GjTE8E4quKQm27CPY/items')
             .then(results => {
                 return results.json();
             }).then(data => {
@@ -45,9 +45,9 @@ class Feeds extends Component {
                     <div className="feed-holder">
                         <div className="inner row">
                             {posts.map((post, i) => (
-                                <div className="col-lg-2 col-md-3 col-xs-12">
+                                <div className="col-lg-2 col-md-3 col-xs-12" key={i}>
                                     <div className="image-holder">
-                                        <a className="feed-image" href={post.url} target="_blank" key={i}>
+                                        <a className="feed-image" href={post.url} target="_blank">
                                             <img src={post.imageUrl} alt="" className="img-gray"/>
                                             <div className="like">
                                                 <img src={Like} alt=""/>
