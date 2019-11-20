@@ -13,7 +13,7 @@ class OurTeam extends Component {
                 <div className="row">
                     <div className="inner row">
                         <div className="col-md-6 off-md-3 col-xs-12">
-                            <h2>The team</h2>
+                            <h2>Introducing our team</h2>
                             <p className="subtext">
                                 We from Corner Office Games started life as an 18-person team
                                 from the Dutch Minor Game Design & Development at the University
