@@ -1,14 +1,37 @@
 .OurTeam {
 
   padding: 8rem 0;
-  background-color: $background-primary;
+  background-image: url("../../assets/ourteam2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
+
+
+  .button-holder {
+
+    a {
+
+      text-decoration: none;
+
+    }
+
+    .button {
+
+      width: auto;
+      opacity: 0;
+      visibility: hidden;
+      text-decoration: none;
+
+    }
+
+  }
 
   h2,
   p {
 
     color: $text-secondary;
     visibility: hidden;
+    text-shadow: 1px 1px $text-primary;
     opacity: 0;
 
   }
@@ -16,48 +39,6 @@
   .video-holder {
 
     margin-top: 4rem;
-
-  }
-
-  iframe {
-
-    width: 600px;
-    height: 360px;
-    visibility: hidden;
-    opacity: 0;
-
-  }
-
-  @media screen and (max-width: 320px) {
-
-    iframe {
-
-      width: 200px;
-      height: 100px;
-
-    }
-
-  }
-
-  @media screen and (max-width: 375px) {
-
-    iframe {
-
-      width: 280px;
-      height: 200px;
-
-    }
-
-  }
-
-  @media screen and (max-width: 414px) {
-
-    iframe {
-
-      width: 280px;
-      height: 200px;
-
-    }
 
   }
 
@@ -77,7 +58,7 @@
 
     }
 
-    iframe {
+    .button {
 
       animation: 600ms appear 1200ms forwards;
       opacity: 1;

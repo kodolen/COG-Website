@@ -13,7 +13,7 @@ class Feeds extends Component {
 
     componentDidMount() {
         //this API call gets the latest 6 posts, this can be changed in Apify.com
-        fetch('https://api.apify.com/v2/datasets/GjTE8E4quKQm27CPY/items')
+        fetch('https://api.apify.com/v2/datasets/KtWr5w656nRzpjTh4/items')
             .then(results => {
                 return results.json();
             }).then(data => {

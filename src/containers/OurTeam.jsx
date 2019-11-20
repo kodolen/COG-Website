@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Waypoint} from "react-waypoint";
+import Button from "../components/button";
 
 class OurTeam extends Component {
     render() {
@@ -21,23 +22,12 @@ class OurTeam extends Component {
                                 designers, developers and artists working to the fullest to
                                 achieve a wonderful game within 14 weeks of time.
                             </p>
-
-                        </div>
-                    </div>
-
-                    <div className="inner row">
-                        <div className="col-md-10 off-md-1 col-xs-12">
-                            <div className="video-holder">
-                                <iframe width="300" height="315" src="https://www.youtube.com/embed/sS4WdR5tmBU"
-                                        frameBorder="0"
-                                        title="vlog"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen>
-                                </iframe>
+                            <div className="button-holder">
+                                <a href="https://www.youtube.com/watch?v=sS4WdR5tmBU&t=1s"
+                                   target="_blank" rel="noopener noreferrer"><Button class="button primary" text="Watch our vlogs"></Button></a>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         )
