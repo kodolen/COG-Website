@@ -22,7 +22,6 @@ class Feeds extends Component {
             });
             console.log(data);
         });
-
     }
 
     render() {
@@ -63,7 +62,6 @@ class Feeds extends Component {
             </div>
         )
     };
-
 }
 
 export default Feeds;
