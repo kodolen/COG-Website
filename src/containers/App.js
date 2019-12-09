@@ -13,7 +13,7 @@ function App() {
       <HeadBanner></HeadBanner>
       <WorkingOn></WorkingOn>
       <OurTeam></OurTeam>
-      <Feeds></Feeds>
+      {/*<Feeds></Feeds>*/}
       <Footer></Footer>
     </div>
   );
