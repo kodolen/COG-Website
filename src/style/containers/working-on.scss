@@ -46,7 +46,8 @@
   h2,
   p,
   .subtitle,
-  .icon-holder {
+  video,
+  .button{
 
     opacity: 0;
     visibility: hidden;
@@ -69,17 +70,63 @@
 
     }
 
-    .subtitle {
+    video {
 
-      animation: 600ms leftToRight 1200ms forwards;
+      animation: 600ms appear 1200ms forwards;
       opacity: 1;
 
     }
 
-    .icon-holder {
+    .subtitle {
 
-      animation: 600ms appear 1800ms forwards;
+      animation: 600ms leftToRight 1800ms forwards;
       opacity: 1;
+
+    }
+
+    .button {
+
+      animation: 600ms appear 2400ms forwards;
+      opacity: 1;
+
+    }
+
+  }
+
+  video {
+
+    width: 60rem;
+    padding-bottom: 2rem;
+
+  }
+
+  .steam-link {
+
+    text-decoration: none;
+
+  }
+
+  .button {
+
+    margin-top: 20rem;
+
+  }
+
+  @media screen and (max-width: 375px) {
+
+    video {
+
+      width: 18rem;
+
+    }
+
+  }
+
+  @media screen and (max-width: 414px) {
+
+    video {
+
+      width: 24rem;
 
     }
 

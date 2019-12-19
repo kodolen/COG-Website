@@ -5,6 +5,7 @@ import InstagramIcon from '../assets/Instagram.svg';
 import FacebookIcon from '../assets/Facebook.svg';
 import TwitterIcon from '../assets/Twitter.svg';
 import YoutubeIcon from '../assets/yt.svg';
+import SteamIcon from "../assets/Steam.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 class Header extends Component {
@@ -71,10 +72,11 @@ class Header extends Component {
             <span><Link activeClass="active" to="js-Feeds" spy={true} smooth={true} offset={-70} duration={500} className="anchor-link">Social</Link></span>
           </div>
           <div className="Header__social">
-            <div className="socialimage" href="https://www.instagram.com/cornerofficegames/" target="_blank" rel="noopener noreferrer"><img src={InstagramIcon} alt=""/></div>
-            <div className="socialimage" href="https://www.facebook.com/cornerofficegames/" target="_blank" rel="noopener noreferrer"><img src={FacebookIcon} alt=""/></div>
-            <div className="socialimage" href="https://twitter.com/cofficegames" target="_blank" rel="noopener noreferrer"><img src={TwitterIcon} alt=""/></div>
-            <div className="socialimage" href="https://www.youtube.com/channel/UCHZqOowdzuAJ3birP_yd1UA" target="_blank" rel="noopener noreferrer"><img src={YoutubeIcon} alt=""/></div>
+            <a className="socialimage" href="https://www.instagram.com/cornerofficegames/" target="_blank" rel="noopener noreferrer"><img src={InstagramIcon} alt=""/></a>
+            <a className="socialimage" href="https://www.facebook.com/cornerofficegames/" target="_blank" rel="noopener noreferrer"><img src={FacebookIcon} alt=""/></a>
+            <a className="socialimage" href="https://twitter.com/cofficegames" target="_blank" rel="noopener noreferrer"><img src={TwitterIcon} alt=""/></a>
+            <a className="socialimage" href="https://www.youtube.com/channel/UCHZqOowdzuAJ3birP_yd1UA" target="_blank" rel="noopener noreferrer"><img src={YoutubeIcon} alt=""/></a>
+            <a className="socialimage" href="https://store.steampowered.com/app/1203680/Guiding_Light/?curator_clanid=4777282&utm_source=SteamDB" target="_blank" rel="noopener noreferrer"><img src={SteamIcon} alt=""/></a>
           </div>
         </div>
       )
@@ -96,10 +98,11 @@ class Header extends Component {
               <span><Link activeClass="active" to="js-Feeds" spy={true} smooth={true} offset={-70} duration={500} className="anchor-link" onClick={this.menuToggle}>Social</Link></span>
             </div>
             <div className="Header__social Header__social--mobile">
-            <div className="socialimage" href="https://www.instagram.com/cornerofficegames/" target="_blank" rel="noopener noreferrer"><img src={InstagramIcon} alt=""/></div>
-            <div className="socialimage" href="https://www.facebook.com/cornerofficegames/" target="_blank" rel="noopener noreferrer"><img src={FacebookIcon} alt=""/></div>
-            <div className="socialimage" href="https://twitter.com/cofficegames" target="_blank" rel="noopener noreferrer"><img src={TwitterIcon} alt=""/></div>
-            <div className="socialimage" href="https://www.youtube.com/channel/UCHZqOowdzuAJ3birP_yd1UA" target="_blank" rel="noopener noreferrer"><img src={YoutubeIcon} alt=""/></div>
+            <a className="socialimage" href="https://www.instagram.com/cornerofficegames/" target="_blank" rel="noopener noreferrer"><img src={InstagramIcon} alt=""/></a>
+            <a className="socialimage" href="https://www.facebook.com/cornerofficegames/" target="_blank" rel="noopener noreferrer"><img src={FacebookIcon} alt=""/></a>
+            <a className="socialimage" href="https://twitter.com/cofficegames" target="_blank" rel="noopener noreferrer"><img src={TwitterIcon} alt=""/></a>
+            <a className="socialimage" href="https://www.youtube.com/channel/UCHZqOowdzuAJ3birP_yd1UA" target="_blank" rel="noopener noreferrer"><img src={YoutubeIcon} alt=""/></a>
+              <a className="socialimage" href="https://store.steampowered.com/app/1203680/Guiding_Light/?curator_clanid=4777282&utm_source=SteamDB" target="_blank" rel="noopener noreferrer"><img src={SteamIcon} alt=""/></a>
             </div>
           </div>
         </div>
